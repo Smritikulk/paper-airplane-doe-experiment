@@ -1,41 +1,45 @@
 # paper-airplane-doe-experiment
 DoE-based optimization of paper airplane flight distance using ANOVA, half &amp; full factorial testing.
-# 📌 Design of Experiments for Optimizing Paper Airplane Flight Distance
 
-This project investigates how geometric and structural changes impact the flight performance of paper airplanes. Using both **half-factorial (2⁴⁻¹)** and **full-factorial** experimental designs, we test four key factors: **aspect ratio, ballast, nose fold, and wing flaps**, with flight distance and time as performance metrics.
+# Design of Experiments for Optimizing Paper Airplane Flight Distance
 
-## 🔍 Summary
-- Two-phase DoE approach: **Half factorial ➝ Full factorial**
-- 4 design factors tested: **Aspect Ratio, Ballast, Nose Fold, Wing Flaps**
-- ~72 total flights performed indoors under controlled conditions
-- ANOVA used to determine statistical significance
-- **Aspect ratio was the dominant variable affecting flight distance**
-- Full details, figures, and ANOVA tables in included report
+This repository documents a Design of Experiments (DoE) project studying how geometric and structural modifications affect the flight performance of paper airplanes. A two-phase experimental approach was conducted using both half-factorial (2⁴⁻¹) and full-factorial designs to evaluate the statistical significance of aspect ratio, ballast, nose folds, and wing flaps. Performance metrics included flight distance and time, measured indoors under controlled conditions.
 
-## 🧠 Key Findings
-- 📌 **Aspect ratio is the only statistically significant factor** affecting flight distance
-- ✨ Optimal configuration:  
-  **AR = 1.2**, no nose fold, **no ballast**
-- 🔁 Converting nose fold to a **percentage (11.4%)** improved data consistency
-- 🚫 Wing flaps + ballast increased noise / instability during launch
-- 🎯 Design simplicity = best performance
+## Project Overview
+- Two-stage DoE approach: half-factorial screening followed by full-factorial refinement
+- Four initial factors studied: aspect ratio, ballast, nose fold, wing flaps
+- Full-factorial refinement focused on the most influential parameters
+- Approximately 72 total flights conducted in controlled indoor conditions
+- ANOVA and residual analysis used to evaluate factor significance
 
-## 📊 Results Overview
+## Key Findings
+- Aspect ratio was the only consistently significant factor affecting flight distance.
+- The optimal configuration identified was:
+  - Aspect Ratio: 1.2
+  - Nose Fold: 0%
+  - Ballast: None
+- Converting nose fold to a percentage (11.4% of plane length) improved measurement consistency.
+- Ballast and wing flaps introduced variation and contributed minimally to performance improvement.
+- Results demonstrated that design simplicity improved aerodynamic stability and average distance.
 
-| Factor               | Effect on Distance       | Significant? |
-|----------------------|--------------------------|--------------|
-| Aspect Ratio         | ⭐ Strong impact          | ✔ Yes        |
-| Nose Fold            | Mild effect              | ⚠️ Interaction only |
-| Ballast              | Weak / inconsistent      | ❌ No         |
-| Wing Flaps (initial) | Confounded AR, removed   | ❌ No         |
+## Factor Significance Summary
 
-## 🛠️ Tools, Methods & Skills Demonstrated
-- Design of Experiments (**2⁴⁻¹** & Full Factorial: 4×2×2)
-- **ANOVA, residual analysis, normality & variance testing**
-- Uncertainty quantification & error propagation
-- SolidWorks modeling for dimension validation
-- Frame-by-frame measurement from **30 Hz video**
-- Controlling experimental noise & reproducibility
-- Indoor controlled launch setup build + documentation
+| Factor               | Impact on Distance         | Statistical Significance |
+|----------------------|----------------------------|---------------------------|
+| Aspect Ratio         | Strong                     | Significant               |
+| Nose Fold            | Moderate (interaction only)| Partially Significant     |
+| Ballast              | Weak / inconsistent        | Not Significant           |
+| Wing Flaps           | Confounded and removed     | Not Significant           |
+
+## Methods and Technical Skills Demonstrated
+- DoE methodology: half-factorial (2⁴⁻¹) and full factorial (4×2×2)
+- ANOVA, residual analysis, normality and variance testing
+- Uncertainty analysis and error quantification
+- SolidWorks CAD validation of aspect ratio geometry
+- Video-based time measurement at 30 Hz frame rate
+- Consistent indoor test protocol and controlled launch design
+
+
+
 
 
